@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aura.SettingsController" spacing="10" styleClass="content">
+    <Label text="Ajustes" styleClass="heading" />
+    <CheckBox text="Notificaciones activas" />
+    <CheckBox text="Tema oscuro" />
+</VBox>

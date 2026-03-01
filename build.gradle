@@ -1,0 +1,34 @@
+plugins {
+    id 'application'
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.14'
+}
+
+group = 'com.aura'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+// JavaFX version used by the OpenJFX Gradle plugin
+
+def javaFXVersion = '23.0.2'
+
+javafx {
+    version = javaFXVersion
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+// dependencies block may contain other libraries if needed
+
+dependencies {
+    // no manual JavaFX dependencies; plugin handles them
+}
+
+application {
+    mainClass = 'com.aura.MainApp'
+    applicationDefaultJvmArgs = [
+        '--add-opens', 'javafx.graphics/javafx.scene=ALL-UNNAMED'
+    ]
+}

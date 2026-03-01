@@ -1,0 +1,24 @@
+/* UI design tokens exported from Figma/Material Theme Builder */
+/* Colors */
+:root {
+    --color-primary: #3f51b5;
+    --color-primary-variant: #303f9f;
+    --color-secondary: #009688;
+    --color-background: #fafafa;
+    --color-surface: #ffffff;
+    --color-on-primary: #ffffff;
+}
+
+/* Typography */
+:root {
+    --font-family-base: "System";
+    --font-size-body: 14px;
+    --font-size-heading: 18px;
+}
+
+/* Spacing */
+:root {
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+}

@@ -1,0 +1,45 @@
+@import url("/com/aura/ui-tokens.css");
+
+/* Design tokens (colors, typography) are defined in ui-tokens.css */
+.root {
+    -fx-font-family: var(--font-family-base);
+}
+
+/* Basic layout colors and spacing */
+.sidebar {
+    -fx-background-color: var(--color-primary);
+    -fx-padding: 10;
+}
+.content {
+    -fx-background-color: var(--color-background);
+    -fx-padding: 20;
+}
+.context-panel {
+    -fx-background-color: var(--color-surface);
+    -fx-padding: 10;
+}
+
+/* Text styling */
+.sidebar Label, .sidebar Button {
+    -fx-text-fill: var(--color-on-primary);
+}
+
+/* Headings and body text */
+.heading {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.body-text {
+    -fx-font-size: 14px;
+}
+
+/* Focus outline for accessibility */
+.button:focused {
+    -fx-border-color: var(--color-secondary);
+    -fx-border-width: 2;
+}
+
+/* Utility classes */
+.align-center {
+    -fx-alignment: center;
+}

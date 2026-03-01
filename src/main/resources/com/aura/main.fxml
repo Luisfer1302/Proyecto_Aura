@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aura.MainController">
+    <left>
+        <VBox fx:id="navPane" spacing="10" styleClass="sidebar">
+            <Label text="Navegación" />
+            <Button fx:id="btnHome" text="Inicio" onAction="#onNavButtonClick" />
+            <Button fx:id="btnProfile" text="Perfil" onAction="#onNavButtonClick" />
+            <Button fx:id="btnSettings" text="Ajustes" onAction="#onNavButtonClick" />
+        </VBox>
+    </left>
+    <center>
+        <VBox spacing="5">
+            <Label fx:id="sectionTitle" text="Contenido principal" styleClass="heading" />
+            <StackPane fx:id="contentPane" styleClass="content" />
+        </VBox>
+    </center>
+    <right>
+        <VBox fx:id="detailPane" spacing="10" styleClass="context-panel">
+            <Label text="Panel contextual" />
+        </VBox>
+    </right>
+</BorderPane>
